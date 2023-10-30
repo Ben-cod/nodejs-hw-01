@@ -50,19 +50,7 @@ async function addContact(name, email, phone) {
   return newContact;
 }
 ////REMOVE/////
-// async function removeContact(contactId) {
-//   const contacts = await listContacts();
-//   const index = contacts.findIndex(
-//     (contact) => contact.id === contactId
-//   );
-//   if (index === -1) {
-//     return null;
-//   }
 
-//   const newContacts = contacts.slice(index, 1);
-//   await writeContact();
-//   return newContacts;
-// }
 async function removeContact(contactId) {
   const contacts = await listContacts();
   const index = contacts.findIndex(

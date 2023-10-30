@@ -1,5 +1,6 @@
 const { Command } = require("commander");
 const program = new Command();
+
 const {
   getContactById,
   listContacts,
